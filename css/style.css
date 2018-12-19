@@ -3,9 +3,10 @@
     padding: 0;
 }
 
-.block {
-    display: flex;
-    flex-basis: 100%;
+body {
+    background: linear-gradient(to top, #3813a5, #3d22e3) no-repeat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 .header {
@@ -15,21 +16,17 @@
     justify-content: space-between;
 }
 
-.block_story {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    padding: 20px;
-    width: 100px;
-}
 
 #sb {
     display: block;
     height: 50px;
     background-color: white;
-    padding: 1% 5% 0 0;
+    padding: 1% 5% 5% 0;
     color: #3726d7;
     font-size: 3em;
     float: left;
+    margin: 15%;
+    text-align: center;
 }
 
 #sb1 {
@@ -38,15 +35,14 @@
     height: 1%;
     float: left;
     position: relative;
-    line-height: 0.7;
-    margin-top: 24px;
+    line-height: 1;
+    top: 54px;
+    right: 25px;
     font-size: 1.2em;
 }
 
 .main_button {
-    display: block;
     width: 2%;
-    float: right;
     left: 95%;
     margin-top: 30px;
     height: 5%;
@@ -72,6 +68,18 @@
     -webkit-transform: rotate(360deg);
 	-ms-transform: rotate(360deg);
     transform: rotate(360deg);
+}
+
+.predictive {
+    padding: 20% 8% 22.7% 8%;
+    text-align: center;
+    font-size: 200%;
+}
+
+#pr2 {
+    font-size: 145%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #c6dcfc;
 }
 
 
