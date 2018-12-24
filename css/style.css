@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(to top, #3813a5, #3d22e3) no-repeat;
+    background: linear-gradient(to top, #170877, #3d22e3) no-repeat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
@@ -17,28 +17,25 @@ body {
 }
 
 
-#sb {
-    display: block;
-    height: 50px;
+.sb {
+    height: 48%;
     background-color: white;
-    padding: 1% 5% 5% 0;
+    padding: 0 3%;
     color: #3726d7;
-    font-size: 3em;
+    font-size: calc(100vw / 40);
     float: left;
     margin: 15%;
-    text-align: center;
 }
 
 #sb1 {
-    display: block;
     width: 5%;
     height: 1%;
     float: left;
     position: relative;
     line-height: 1;
-    top: 54px;
-    right: 25px;
-    font-size: 1,2em;
+    top: 42%;
+    right: 12%;
+    font-size: calc(100vw / 95);
 }
 
 .main_button {
@@ -103,7 +100,7 @@ body {
 .technology_bilds {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    width: 40%;
     margin-top: 8%;
     font-size: calc(100vw / 40);
 }
@@ -115,11 +112,102 @@ body {
 }
 
 #tx1 {
-    justify-content: flex-end;
+    margin-left: 15%;
 }
 
 #tx4 {
-    justify-content: flex-start;
+    margin-right: 15%;
 }
 
+#tx5 {
+    justify-content: flex-end;
+}
 
+.start_bt {
+    background: linear-gradient(to right, #970cff, #5d3cff);
+    font-size: calc(100vw / 70);
+    text-transform: uppercase;
+    color: white;
+    border:  0;
+}
+
+#bt1 {
+    padding: 3% 10%;
+    margin: 18% 0 0 35%;
+}
+
+.block3 {
+    margin-top: 10%;
+}
+
+.you_need_growth {
+    float: left;
+    width: 30%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: calc(100vw / 95);
+    padding: 10% 0 20% 18%;
+}
+
+.yellow_text {
+    color: yellow;
+    text-transform: uppercase;
+    font-size: calc(100vw / 85);
+}
+
+.white_h1_text {
+    font-size: calc(100vw / 30);
+}
+
+#kb3 {
+    width: 30%;
+    
+}
+
+.peole_buy {
+    float: right;
+    width: 40%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: calc(100vw / 95);
+    padding: 3% 15% 20% 0;
+
+}
+
+.block4 {
+    margin-top: 30%;
+}
+
+#kb4 {
+    width: 20%;
+    margin-left: 15%;
+}
+
+.block5 {
+    margin-top: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ready_to_start {
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+#first {
+    font-size: calc(100vw / 25);
+}
+
+#bt2 {
+    padding: 3% 10%;
+    margin-bottom: 40%;
+}
+
+#sb_end {
+    height: 30%;
+    font-size: calc(100vw / 15);
+    padding: 3% 2% 0 1%;
+}
