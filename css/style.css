@@ -203,11 +203,15 @@ body {
 
 #bt2 {
     padding: 3% 10%;
-    margin-bottom: 40%;
+    margin-bottom: 50%;
 }
 
 #sb_end {
     height: 30%;
     font-size: calc(100vw / 15);
     padding: 3% 2% 0 1%;
+}
+
+.svg_tx {
+    margin: 0 5% 0 4%;
 }
