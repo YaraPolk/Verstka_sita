@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0;
 }
+@keyframes pred {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 body {
     background: linear-gradient(to top, #170877, #3d22e3) no-repeat;
@@ -9,7 +17,12 @@ body {
     color: white;
 }
 
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
 .header {
+    animation: pred 3s;
     display: flex;
     position: absolute;
     width: 97%;
@@ -68,6 +81,7 @@ body {
 }
 
 .predictive {
+    animation: pred 3s;
     padding: 18% 8% 15% 8%;
     text-align: center;
     font-size: 200%;
@@ -89,12 +103,13 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 10% 5%;
-    
 }
 
 #kb2 {
     width: 45%;
-    padding-right: 3.5%;
+    height: 45%;
+    opacity: 0;
+    transition-duration: 2s;
 }
 
 .technology_bilds {
@@ -120,7 +135,7 @@ body {
 }
 
 #tx5 {
-    justify-content: flex-end;
+    flex-direction: row;
 }
 
 .start_bt {
@@ -133,7 +148,7 @@ body {
 
 #bt1 {
     padding: 3% 10%;
-    margin: 18% 0 0 35%;
+    margin: 18% 0 0 45%;
 }
 
 .block3 {
@@ -201,9 +216,21 @@ body {
     font-size: calc(100vw / 25);
 }
 
+#liner {
+    width: 0%;
+    margin: 2%;
+    height: 3px;
+    background: radial-gradient(50% 100%, #87f3d8, #960cff00);
+    transition-duration: 2s;
+}
+
+
+
 #bt2 {
     padding: 3% 10%;
-    margin-bottom: 50%;
+    margin: 2% 0 50% 0;
+    opacity: 0;
+    transition-duration: 3s;
 }
 
 #sb_end {
