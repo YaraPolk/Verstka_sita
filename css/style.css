@@ -12,7 +12,7 @@
 }
 
 body {
-    background: linear-gradient(to top, #170877, #3d22e3) no-repeat;
+    background: linear-gradient(to top, #3c1fe1 20%, #250f85 70%, #210deb 80%) no-repeat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
@@ -108,6 +108,7 @@ body::-webkit-scrollbar {
 #kb2 {
     width: 45%;
     height: 45%;
+    margin-right: 3%;
     opacity: 0;
     transition-duration: 2s;
 }
@@ -149,6 +150,8 @@ body::-webkit-scrollbar {
 #bt1 {
     padding: 3% 10%;
     margin: 18% 0 0 45%;
+    transition-duration: 2s;
+    opacity: 0;
 }
 
 .block3 {
@@ -157,10 +160,17 @@ body::-webkit-scrollbar {
 
 .you_need_growth {
     float: left;
-    width: 30%;
+    width: 50%; 
+    overflow: hidden;
+    
+}
+
+#y_n_g {
+    padding: 10% 0 0 40%;
+    position: relative;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: calc(100vw / 95);
-    padding: 10% 0 20% 18%;
+    transition-duration: 3s;
 }
 
 .yellow_text {
@@ -175,29 +185,32 @@ body::-webkit-scrollbar {
 
 #kb3 {
     width: 30%;
-    
+    transition-duration: 2s;
 }
 
 .peole_buy {
     float: right;
     width: 40%;
+    position: relative;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: calc(100vw / 95);
     padding: 3% 15% 20% 0;
-
+    transition-duration: 3s;
 }
 
 .block4 {
     margin-top: 30%;
+    overflow: hidden;
 }
 
 #kb4 {
     width: 20%;
     margin-left: 15%;
+    transition-duration: 2s;
 }
 
 .block5 {
-    margin-top: 40%;
+    margin-top: 20%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -241,5 +254,6 @@ body::-webkit-scrollbar {
 
 .svg_tx {
     margin: 0 5% 0 4%;
-    width: 15%;
+    width: 0;
+    transition-duration: 1s;
 }
