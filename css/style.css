@@ -12,7 +12,7 @@
 }
 
 body {
-    background: linear-gradient(to top, #3c1fe1 20%, #250f85 70%, #210deb 80%) no-repeat;
+    background: linear-gradient(to top, #3c1fe1 30%, #250f85 70%, #210deb 80%);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
@@ -75,8 +75,6 @@ body::-webkit-scrollbar {
 }
 
 #link:hover {
-    -webkit-transform: rotate(360deg);
-	-ms-transform: rotate(360deg);
     transform: rotate(360deg);
 }
 
@@ -138,6 +136,51 @@ body::-webkit-scrollbar {
 #tx5 {
     flex-direction: row;
 }
+
+.anime-line {
+    position: absolute;
+    height: 1%;
+}
+
+#anime-1 {
+    margin: -11.5% 0 0 11.5%;
+    width: 50%;
+    transform: rotate(133deg);
+}
+
+#line_1 {
+    height: 2px;
+    background: linear-gradient(to left, #87f3d8, #5c3cff00);
+    position: absolute;
+    transition-duration: 3s;
+}
+
+#anime-2 {
+    width: 20%;
+    transform: rotate(133deg);
+    margin: 6% 0 0 -4%;
+}
+
+
+#line_2 {
+    height: 2px;
+    background-color: #87f3d8;
+    position: absolute;
+    transition-duration: 3s;
+}
+
+#anime-3 {
+    width: 20%;
+    margin: 8.3% 0 0 4.3%;
+}
+
+#line_3 {
+    height: 2px;
+    background-color: #87f3d8;
+    position: absolute;
+    transition-duration: 3s;
+}
+
 
 .start_bt {
     background: linear-gradient(to right, #970cff, #5d3cff);
@@ -237,12 +280,9 @@ body::-webkit-scrollbar {
     transition-duration: 2s;
 }
 
-
-
 #bt2 {
     padding: 3% 10%;
     margin: 2% 0 50% 0;
-    opacity: 0;
     transition-duration: 3s;
 }
 
