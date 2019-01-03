@@ -21,14 +21,37 @@ body::-webkit-scrollbar {
     display: none; 
 }
 
+.block1 {
+    overflow: hidden;
+}
+
 .header {
     animation: pred 3s;
     display: flex;
-    position: absolute;
     width: 97%;
     justify-content: space-between;
+    z-index: 2;
 }
 
+#back-block1 {
+    position: absolute;
+    background-color: #00000011;
+    width: 100%;
+    height: 200%;
+    z-index: 1;
+    transform: rotate(43deg);
+    margin: -18% 0 0 -70%;
+}
+
+#back-block2 {
+    position: absolute;
+    background-color: #00000011;
+    width: 100%;
+    height: 200%;
+    z-index: 1;
+    transform: rotate(43deg);
+    margin: 15% 0 0 -80%;
+}
 
 .sb {
     height: 48%;
@@ -38,6 +61,7 @@ body::-webkit-scrollbar {
     font-size: calc(100vw / 40);
     float: left;
     margin: 15%;
+    z-index: 2;
 }
 
 #sb1 {
@@ -49,9 +73,10 @@ body::-webkit-scrollbar {
     top: 42%;
     right: 12%;
     font-size: calc(100vw / 95);
+    z-index: 2;
 }
 
-.main_button {
+.main-button {
     width: 2%;
     left: 95%;
     margin-top: 30px;
@@ -64,13 +89,13 @@ body::-webkit-scrollbar {
     transition: all .55s ease-in-out;
 }
 
-.line_main {
+.line-main {
     width: 100%;
     background-color: #87f3d8;
     height: 2px;
 }
 
-.line_main:nth-child(2) {
+.line-main:nth-child(2) {
     margin: 30% 0;
 }
 
@@ -82,14 +107,17 @@ body::-webkit-scrollbar {
     animation: pred 3s;
     padding: 18% 8% 15% 8%;
     text-align: center;
+    position: relative;
     font-size: 200%;
     font-size: calc(100vw / 60);
+    z-index: 2;
 }
 
 #pr2 {
     font-size: calc(100vw / 41);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #c6dcfc;
+    z-index: 2;
 }
 
 #kb1 {
@@ -101,6 +129,8 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: space-between;
     padding: 10% 5%;
+    overflow: hidden;
+    z-index: 2;
 }
 
 #kb2 {
@@ -111,12 +141,13 @@ body::-webkit-scrollbar {
     transition-duration: 2s;
 }
 
-.technology_bilds {
+.technology-bilds {
     display: flex;
     flex-direction: column;
     width: 40%;
     margin-top: 8%;
     font-size: calc(100vw / 40);
+    z-index: 2;
 }
 
 .tx {
@@ -182,7 +213,7 @@ body::-webkit-scrollbar {
 }
 
 
-.start_bt {
+.start-bt {
     background: linear-gradient(to right, #970cff, #5d3cff);
     font-size: calc(100vw / 70);
     text-transform: uppercase;
@@ -201,7 +232,9 @@ body::-webkit-scrollbar {
     margin-top: 10%;
 }
 
-#line_4, #line_5, #line_6, #line_7 {
+#line_4, #line_5, #line_6, #line_7, #line_8, 
+#line_9, #line_10, #line_11, #line_12, #line_13, 
+#line_14, #line_15 {
     height: 2px;
     background-color: #87f3d8;
     position: absolute;
@@ -219,25 +252,29 @@ body::-webkit-scrollbar {
     margin: -6.1% 0 0 62.5%;
 }
 
+#line_15 {
+    background: linear-gradient(to right, #87f3d8, #5c3cff00);
+}
+
 #anime-5 {
     width: 2%;
-    margin: -7.4% 0 0 70.6%;
-    transform: rotate(120deg);
+    margin: -7.3% 0 0 70.5%;
+    transform: rotate(122deg);
 }
 
 #anime-6 {
     width: 2%;
-    margin: -7.2% 0 0 71.6%;
-    transform: rotate(60deg);
+    margin: -7.1% 0 0 71.7%;
+    transform: rotate(58deg);
 }
 
 #anime-7 {
     width: 65%;
     transform: rotate(149deg);
-    margin: 13.9% 0 0 -6.7%;
+    margin: 13.7% 0 0 -6.7%;
 }
 
-.you_need_growth {
+.you-need-growth {
     float: left;
     width: 50%; 
     overflow: hidden;
@@ -252,13 +289,13 @@ body::-webkit-scrollbar {
     transition-duration: 3s;
 }
 
-.yellow_text {
+.yellow-text {
     color: yellow;
     text-transform: uppercase;
     font-size: calc(100vw / 85);
 }
 
-.white_h1_text {
+.white-h1-text {
     font-size: calc(100vw / 30);
 }
 
@@ -268,7 +305,7 @@ body::-webkit-scrollbar {
     z-index: 1;
 }
 
-.peole_buy {
+.peole-buy {
     float: right;
     width: 40%;
     position: relative;
@@ -289,20 +326,71 @@ body::-webkit-scrollbar {
     transition-duration: 2s;
 }
 
+#anime-8 {
+    width: 30%;
+    transform: rotate(30deg);
+    margin: -1% 0 0 -3.2%;
+
+}
+
+#anime-9 {
+    width: 7%;
+    transform: rotate(-90deg);
+    margin: 2.9% 0 0 21.6%;
+}
+
+#anime-10 {
+    width: 7%;
+    transform: rotate(-30deg);
+    margin: -17.5% 0 0 34.7%;
+}
+
+#anime-11 {
+    width: 2%;
+    transform: rotate(90deg);
+    margin: -18.4% 0 0 39.9%;
+}
+
+#anime-12 {
+    width: 3%;
+    margin: -17.3% 0 0 41.1%;
+}
+
+#anime-13 {
+    width: 13%;
+    margin: -17.3% 0 0 75%;
+}
+
+#anime-14 {
+    width: 15%;
+    transform: rotate(90deg);
+    margin: -10% 0 0 80.3%;
+}
+
+#anime-15 {
+    width: 45%;
+    transform: rotate(135deg);
+    margin: 13.2% 0 0 49.5%;
+}
+
 .block5 {
     margin-top: 20%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    overflow-y: hidden;
+    z-index: 2;
 }
 
-.ready_to_start {
+.ready-to-start {
     width: 50%;
     align-items: center;
     flex-direction: column;
     display: flex;
     justify-content: center;
+    overflow: hidden;
+    z-index: 2;
 }
 
 #first {
@@ -315,12 +403,14 @@ body::-webkit-scrollbar {
     height: 3px;
     background: radial-gradient(50% 100%, #87f3d8, #960cff00);
     transition-duration: 2s;
+    z-index: 2;
 }
 
 #bt2 {
     padding: 3% 10%;
     margin: 2% 0 50% 0;
     transition-duration: 3s;
+    z-index: 2;
 }
 
 #sb_end {
@@ -329,7 +419,7 @@ body::-webkit-scrollbar {
     padding: 3% 2% 0 1%;
 }
 
-.svg_tx {
+.svg-tx {
     margin: 0 5% 0 4%;
     width: 0;
     transition-duration: 1s;
