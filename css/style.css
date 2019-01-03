@@ -201,6 +201,42 @@ body::-webkit-scrollbar {
     margin-top: 10%;
 }
 
+#line_4, #line_5, #line_6, #line_7 {
+    height: 2px;
+    background-color: #87f3d8;
+    position: absolute;
+    transition-duration: 2s;
+    z-index: 5;
+}
+
+#line_7 {
+    transition-duration: 3s;
+}
+
+#anime-4 {
+    width: 20%;
+    transform: rotate(-91deg);
+    margin: -6.1% 0 0 62.5%;
+}
+
+#anime-5 {
+    width: 2%;
+    margin: -7.4% 0 0 70.6%;
+    transform: rotate(120deg);
+}
+
+#anime-6 {
+    width: 2%;
+    margin: -7.2% 0 0 71.6%;
+    transform: rotate(60deg);
+}
+
+#anime-7 {
+    width: 65%;
+    transform: rotate(149deg);
+    margin: 13.9% 0 0 -6.7%;
+}
+
 .you_need_growth {
     float: left;
     width: 50%; 
@@ -229,6 +265,7 @@ body::-webkit-scrollbar {
 #kb3 {
     width: 30%;
     transition-duration: 2s;
+    z-index: 1;
 }
 
 .peole_buy {
