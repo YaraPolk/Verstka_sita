@@ -12,7 +12,7 @@
 }
 
 body {
-    background: linear-gradient(to top, #3c1fe1 30%, #250f85 70%, #210deb 80%);
+    background: linear-gradient(to top, #3c1fe1 20%, #250f85 60%, #210deb 80%) no-repeat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
@@ -25,8 +25,37 @@ body::-webkit-scrollbar {
     overflow: hidden;
 }
 
+.navigation {
+    position:fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:10%;
+    bottom:45%;
+    left:90%;
+    z-index:3;
+    cursor:pointer;
+}
+
+.navigation .dot{
+    width:10px;
+    height:10px;
+    background:#ffffff;
+    cursor:pointer;
+    border-radius:10px;
+    margin:2px auto;
+    border:1px solid #ffffff;
+}
+    
+.navigation .active{
+    background:#6c82ff;
+    border:1px solid #6c82ff;
+    width:12px;
+    height:12px;
+}
+
 .header {
-    animation: pred 3s;
+    animation: pred 2s;
     display: flex;
     width: 97%;
     justify-content: space-between;
@@ -105,7 +134,7 @@ body::-webkit-scrollbar {
 
 .predictive {
     animation: pred 3s;
-    padding: 18% 8% 15% 8%;
+    padding: 15% 8% 15% 8%;
     text-align: center;
     position: relative;
     font-size: 200%;
@@ -128,7 +157,7 @@ body::-webkit-scrollbar {
 .block2 {
     display: flex;
     justify-content: space-between;
-    padding: 10% 5%;
+    padding: 7% 5%;
     overflow: hidden;
     z-index: 2;
 }
@@ -316,7 +345,7 @@ body::-webkit-scrollbar {
 }
 
 .block4 {
-    margin-top: 30%;
+    margin-top: 20%;
     overflow: hidden;
 }
 
@@ -353,7 +382,7 @@ body::-webkit-scrollbar {
 
 #anime-12 {
     width: 3%;
-    margin: -17.3% 0 0 41.1%;
+    margin: -17.2% 0 0 41.1%;
 }
 
 #anime-13 {
@@ -374,7 +403,7 @@ body::-webkit-scrollbar {
 }
 
 .block5 {
-    margin-top: 20%;
+    margin-top: 11%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -408,7 +437,7 @@ body::-webkit-scrollbar {
 
 #bt2 {
     padding: 3% 10%;
-    margin: 2% 0 50% 0;
+    margin: 2% 0 20% 0;
     transition-duration: 3s;
     z-index: 2;
 }
@@ -417,6 +446,7 @@ body::-webkit-scrollbar {
     height: 30%;
     font-size: calc(100vw / 15);
     padding: 3% 2% 0 1%;
+    margin-top: 5%;
 }
 
 .svg-tx {
